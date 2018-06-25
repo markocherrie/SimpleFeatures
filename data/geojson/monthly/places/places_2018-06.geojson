@@ -1,0 +1,309 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [ {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1842278999999998, 55.94838400000001 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T131758+0100",
+      "endTime" : "20180618T164704+0100",
+      "place" : {
+        "id" : 510267390,
+        "name" : "Work",
+        "type" : "work",
+        "location" : {
+          "lat" : 55.94838400000001,
+          "lon" : -3.1842278999999998
+        }
+      },
+      "lastUpdate" : "20180618T161322Z",
+      "date" : "20180618"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1869095563889, 55.948495452493 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T165129+0100",
+      "endTime" : "20180618T173015+0100",
+      "place" : {
+        "id" : 510321770,
+        "name" : "Costa Coffee",
+        "type" : "facebook",
+        "facebookPlaceId" : "416277641848804",
+        "location" : {
+          "lat" : 55.948495452493,
+          "lon" : -3.1869095563889
+        }
+      },
+      "lastUpdate" : "20180618T174450Z",
+      "date" : "20180618"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1842278999999998, 55.94838400000001 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T173426+0100",
+      "endTime" : "20180618T193846+0100",
+      "place" : {
+        "id" : 510267390,
+        "name" : "Work",
+        "type" : "work",
+        "location" : {
+          "lat" : 55.94838400000001,
+          "lon" : -3.1842278999999998
+        }
+      },
+      "lastUpdate" : "20180618T190316Z",
+      "date" : "20180618"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.228312634811668, 55.93449111680904 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T195037+0100",
+      "endTime" : "20180619T095615+0100",
+      "place" : {
+        "id" : 787103581,
+        "name" : "Home",
+        "type" : "home",
+        "location" : {
+          "lat" : 55.93449111680904,
+          "lon" : -3.228312634811668
+        }
+      },
+      "lastUpdate" : "20180619T100046Z",
+      "date" : "20180618"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.228312634811668, 55.93449111680904 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T195037+0100",
+      "endTime" : "20180619T095615+0100",
+      "place" : {
+        "id" : 787103581,
+        "name" : "Home",
+        "type" : "home",
+        "location" : {
+          "lat" : 55.93449111680904,
+          "lon" : -3.228312634811668
+        }
+      },
+      "lastUpdate" : "20180619T100046Z",
+      "date" : "20180619"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1842278999999998, 55.94838400000001 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180619T100941+0100",
+      "endTime" : "20180619T130416+0100",
+      "place" : {
+        "id" : 510267390,
+        "name" : "Work",
+        "type" : "work",
+        "location" : {
+          "lat" : 55.94838400000001,
+          "lon" : -3.1842278999999998
+        }
+      },
+      "lastUpdate" : "20180619T121648Z",
+      "date" : "20180619"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1851943, 55.946014 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180619T130902+0100",
+      "endTime" : "20180619T132633+0100",
+      "place" : {
+        "id" : 787221300,
+        "type" : "unknown",
+        "location" : {
+          "lat" : 55.946014,
+          "lon" : -3.1851943
+        }
+      },
+      "lastUpdate" : "20180619T140841Z",
+      "date" : "20180619"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1842278999999998, 55.94838400000001 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180619T133315+0100",
+      "endTime" : "20180619T165153+0100",
+      "place" : {
+        "id" : 510267390,
+        "name" : "Work",
+        "type" : "work",
+        "location" : {
+          "lat" : 55.94838400000001,
+          "lon" : -3.1842278999999998
+        }
+      },
+      "lastUpdate" : "20180619T172347Z",
+      "date" : "20180619"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.186982, 55.955484 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180619T170337+0100",
+      "endTime" : "20180619T175454+0100",
+      "place" : {
+        "id" : 787279380,
+        "type" : "unknown",
+        "location" : {
+          "lat" : 55.955484,
+          "lon" : -3.186982
+        }
+      },
+      "lastUpdate" : "20180619T172347Z",
+      "date" : "20180619"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1870993, 55.956047 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180619T175756+0100",
+      "endTime" : "20180619T180623+0100",
+      "place" : {
+        "id" : 787279381,
+        "type" : "unknown",
+        "location" : {
+          "lat" : 55.956047,
+          "lon" : -3.1870993
+        }
+      },
+      "lastUpdate" : "20180619T175327Z",
+      "date" : "20180619"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.228312634811668, 55.93449111680904 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180619T183813+0100",
+      "endTime" : "20180620T103857+0100",
+      "place" : {
+        "id" : 787103581,
+        "name" : "Home",
+        "type" : "home",
+        "location" : {
+          "lat" : 55.93449111680904,
+          "lon" : -3.228312634811668
+        }
+      },
+      "lastUpdate" : "20180620T104020Z",
+      "date" : "20180619"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.228312634811668, 55.93449111680904 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180619T183813+0100",
+      "endTime" : "20180620T103857+0100",
+      "place" : {
+        "id" : 787103581,
+        "name" : "Home",
+        "type" : "home",
+        "location" : {
+          "lat" : 55.93449111680904,
+          "lon" : -3.228312634811668
+        }
+      },
+      "lastUpdate" : "20180620T104020Z",
+      "date" : "20180620"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.2293615, 55.933168 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180620T104554+0100",
+      "endTime" : "20180620T104653+0100",
+      "place" : {
+        "id" : 787399289,
+        "type" : "unknown",
+        "location" : {
+          "lat" : 55.933168,
+          "lon" : -3.2293615
+        }
+      },
+      "lastUpdate" : "20180620T104020Z",
+      "date" : "20180620"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.228312634811668, 55.93449111680904 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180620T105106+0100",
+      "endTime" : "20180620T131231+0100",
+      "place" : {
+        "id" : 787103581,
+        "name" : "Home",
+        "type" : "home",
+        "location" : {
+          "lat" : 55.93449111680904,
+          "lon" : -3.228312634811668
+        }
+      },
+      "lastUpdate" : "20180620T121232Z",
+      "date" : "20180620"
+    }
+  } ]
+}

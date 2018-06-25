@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx 
+creator="Moves" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:tns="http://www.topografix.com/GPX/1/1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <desc>Moves Storyline</desc>
+    <link href="http://www.moves-app.com"/>
+    <time>2018-06-20T12:32:04.233Z</time>
+  </metadata>
+  <wpt lon="-3.1842278999999998" lat="55.94838400000001">
+    <name>Work</name>
+    <type>Work</type>
+  </wpt>
+  <wpt lon="-3.1869095563889" lat="55.948495452493">
+    <name>Costa Coffee</name>
+  </wpt>
+  <wpt lon="-3.228312634811668" lat="55.93449111680904">
+    <name>Home</name>
+    <type>Home</type>
+  </wpt>
+  <trk>
+    <name>18/06/18</name>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-18T13:17:58.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-18T16:47:04.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842279" lat="55.948384">
+        <time>2018-06-18T16:47:04.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.184438" lat="55.9484">
+        <time>2018-06-18T16:47:35.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1845917" lat="55.948443">
+        <time>2018-06-18T16:48:07.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1850649" lat="55.948236">
+        <time>2018-06-18T16:48:55.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1853973" lat="55.948149">
+        <time>2018-06-18T16:49:11.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1865367" lat="55.947998">
+        <time>2018-06-18T16:50:19.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866439" lat="55.948023">
+        <time>2018-06-18T16:50:35.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866987" lat="55.948267">
+        <time>2018-06-18T16:51:04.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866486" lat="55.94829">
+        <time>2018-06-18T16:51:29.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1869095563889" lat="55.948495452493">
+        <time>2018-06-18T16:51:29.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1869095563889" lat="55.948495452493">
+        <time>2018-06-18T17:30:15.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1869096" lat="55.948495">
+        <time>2018-06-18T17:30:15.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1867255" lat="55.948326">
+        <time>2018-06-18T17:30:37.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866653" lat="55.948217">
+        <time>2018-06-18T17:31:15.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1865066" lat="55.948066">
+        <time>2018-06-18T17:31:41.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1860336" lat="55.948042">
+        <time>2018-06-18T17:32:11.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1854462" lat="55.948071">
+        <time>2018-06-18T17:32:34.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.185101" lat="55.948273">
+        <time>2018-06-18T17:32:58.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1845551" lat="55.948417">
+        <time>2018-06-18T17:33:56.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1842279" lat="55.948384">
+        <time>2018-06-18T17:34:26.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-18T17:34:26.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-18T19:38:46.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842279" lat="55.948384">
+        <time>2018-06-18T19:38:46.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1847297" lat="55.948674">
+        <time>2018-06-18T19:39:04.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1853747" lat="55.948933">
+        <time>2018-06-18T19:39:20.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1865888" lat="55.948748">
+        <time>2018-06-18T19:39:40.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1891095" lat="55.948395">
+        <time>2018-06-18T19:40:08.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1906166" lat="55.948385">
+        <time>2018-06-18T19:40:30.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1916866" lat="55.948247">
+        <time>2018-06-18T19:40:49.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1940995" lat="55.947961">
+        <time>2018-06-18T19:41:15.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1969211" lat="55.947132">
+        <time>2018-06-18T19:41:41.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.199152" lat="55.946535">
+        <time>2018-06-18T19:42:24.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2005644" lat="55.946239">
+        <time>2018-06-18T19:42:43.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2028274" lat="55.945508">
+        <time>2018-06-18T19:43:15.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2045497" lat="55.944853">
+        <time>2018-06-18T19:43:42.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2055428" lat="55.944651">
+        <time>2018-06-18T19:44:10.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.206484" lat="55.944306">
+        <time>2018-06-18T19:44:26.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2080019" lat="55.943443">
+        <time>2018-06-18T19:44:51.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2113024" lat="55.942685">
+        <time>2018-06-18T19:45:23.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.215454" lat="55.941211">
+        <time>2018-06-18T19:46:18.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2201072" lat="55.939983">
+        <time>2018-06-18T19:48:00.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2237391" lat="55.938422">
+        <time>2018-06-18T19:48:44.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2255837" lat="55.937113">
+        <time>2018-06-18T19:49:19.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2266848" lat="55.936201">
+        <time>2018-06-18T19:49:39.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2278099" lat="55.935498">
+        <time>2018-06-18T19:49:55.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2284972" lat="55.93454">
+        <time>2018-06-18T19:50:18.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2283126" lat="55.934491">
+        <time>2018-06-18T19:50:37.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-18T19:50:37.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-19T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

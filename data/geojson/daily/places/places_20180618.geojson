@@ -1,0 +1,93 @@
+{
+  "type" : "FeatureCollection",
+  "features" : [ {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1842278999999998, 55.94838400000001 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T131758+0100",
+      "endTime" : "20180618T164704+0100",
+      "place" : {
+        "id" : 510267390,
+        "name" : "Work",
+        "type" : "work",
+        "location" : {
+          "lat" : 55.94838400000001,
+          "lon" : -3.1842278999999998
+        }
+      },
+      "lastUpdate" : "20180618T161322Z",
+      "date" : "20180618"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1869095563889, 55.948495452493 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T165129+0100",
+      "endTime" : "20180618T173015+0100",
+      "place" : {
+        "id" : 510321770,
+        "name" : "Costa Coffee",
+        "type" : "facebook",
+        "facebookPlaceId" : "416277641848804",
+        "location" : {
+          "lat" : 55.948495452493,
+          "lon" : -3.1869095563889
+        }
+      },
+      "lastUpdate" : "20180618T174450Z",
+      "date" : "20180618"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.1842278999999998, 55.94838400000001 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T173426+0100",
+      "endTime" : "20180618T193846+0100",
+      "place" : {
+        "id" : 510267390,
+        "name" : "Work",
+        "type" : "work",
+        "location" : {
+          "lat" : 55.94838400000001,
+          "lon" : -3.1842278999999998
+        }
+      },
+      "lastUpdate" : "20180618T190316Z",
+      "date" : "20180618"
+    }
+  }, {
+    "type" : "Feature",
+    "geometry" : {
+      "type" : "Point",
+      "coordinates" : [ -3.228312634811668, 55.93449111680904 ]
+    },
+    "properties" : {
+      "type" : "place",
+      "startTime" : "20180618T195037+0100",
+      "endTime" : "20180619T095615+0100",
+      "place" : {
+        "id" : 787103581,
+        "name" : "Home",
+        "type" : "home",
+        "location" : {
+          "lat" : 55.93449111680904,
+          "lon" : -3.228312634811668
+        }
+      },
+      "lastUpdate" : "20180619T100046Z",
+      "date" : "20180618"
+    }
+  } ]
+}

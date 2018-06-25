@@ -1,0 +1,512 @@
+st_as_sf(., coords = c("longitude", "latitude"),crs = 4326) %>%
+st_transform(., 27700)
+tracks_sf_BNG_pt$distances <- as.numeric(st_distance(x = tracks_sf_BNG_pt, y = keyplaces_sf_BNG_pt))
+View(tracks_sf_BNG_pt)
+hist(tracks_sf_BNG_pt$distances)
+names(tracks_sf_BNG_pt)
+ggplot(tracks_sf_BNG_pt, aes(date, distances)) + geom_line()
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01")
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+ggplot(., aes(date, distances)) + geom_line()
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+ggplot(., aes(time, distances)) + geom_line()
+tracks_sf_BNG_pt$time
+?format
+typeof(tracks_sf_BNG_pt$time)
+Hours <- format(as.POSIXct(strptime(tracks_sf_BNG_pt$time,"%Y/%m/%d %H:%M",tz="")) ,format = "%H:%M")
+Hours
+typeof(tracks_sf_BNG_pt$time)
+tracks_sf_BNG_pt$time
+test<-"2018-06-19T18:33:58.000+01:00"
+?as.POSIXct
+Hours <- format(as.POSIXct(strptime(test,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")
+Hours
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_line()
+# geomtery is sticky with dplyr verbs
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_bar()
+?geomtracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point()
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point()
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point()
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point()
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point() +
+scale_y_datetime(limits =lims, breaks=date_breaks("1 hour"), labels=date_format("%H:%M"))+
+theme(axis.text.x=element_text(angle=90))
+library(scales)
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point() +
+scale_y_datetime(limits =lims, breaks=date_breaks("1 hour"), labels=date_format("%H:%M"))+
+theme(axis.text.x=element_text(angle=90))
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point() +
+scale_x_datetime(limits =lims, breaks=date_breaks("1 hour"), labels=date_format("%H:%M"))+
+theme(axis.text.x=element_text(angle=90))
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point() +
+scale_x_datetime(breaks=date_breaks("1 hour"), labels=date_format("%H:%M"))+
+theme(axis.text.x=element_text(angle=90))
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point() +
+scale_x_datetime(breaks = date_breaks("1 hour"), minor_breaks=date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+p <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point()
+p
+p + scale_x_datetime(breaks = date_breaks("1 hour"), minor_breaks=date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+p <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+ggplot(., aes(time2, distances)) + geom_point()
+p + scale_x_datetime(breaks = scales::date_breaks("1 hour"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")) %>%
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+View(plot)
+ggplot(., aes(time2, distances)) + geom_point()
+ggplot(plot, aes(time2, distances)) + geom_point()
+p <-ggplot(plot, aes(time2, distances)) + geom_point()
+p + scale_x_datetime(breaks = scales::date_breaks("1 hour"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = as.Date(format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))) %>%
+ggplot(., aes(time2, distances)) + geom_point() + scale_x_datetime(breaks = scales::date_breaks("1 hour"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = as.Date(format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")))
+?as.Date
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = as.Date(format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M")), format="%H:%M")
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = as.Date(format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+)
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+as.Date(plot$time2)
+as.POSIXct(plot$time2)
+View(plot)
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+#mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+ggplot(., aes(time, distances)) + geom_point() + scale_x_datetime(breaks = scales::date_breaks("1 hour"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M"))
+plot
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%Y-%m-%dT%H:%M:%S")) %>%
+ggplot(., aes(time, distances)) + geom_point() + scale_x_datetime(breaks = scales::date_breaks("1 hour"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M"))
+pot
+plot
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+#mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+ggplot(., aes(time, distances)) + geom_point() + scale_x_datetime(breaks = scales::date_breaks("1 hour"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M"))
+plot
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01")
+plot
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+plot
+p <-ggplot(plot, aes(time2, distances)) + geom_point()
+p
+typeof(plot$time2)
+as.Date(plot$time2, format="%H:%M")
+as.POSIXct(plot$time2, format="%H:%M")
+plot$time2<- as.POSIXct(plot$time2, format="%H:%M")
+p <-ggplot(plot, aes(time2, distances)) + geom_point()
+p
+p + scale_x_datetime(breaks = scales::date_breaks("1 hour"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+plot$time2<- as.POSIXct(plot$time, format="%H:%M")
+plot
+plot$time2<- as.POSIXct(plot$time2, format="%H:%M")
+View(plot)
+plot$time2
+plot <- tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+plot$time2<- as.POSIXct(plot$time2, format="%H:%M")
+View(plot)
+ggplot(plot, aes(time, distances)) + geom_point()
+plot$time2<- as.POSIXct(plot$time2, format="%H:%M")
+p <-ggplot(plot, aes(time2, distances)) + geom_point()
+p
+p + scale_x_datetime(breaks = scales::date_breaks("10 minutes"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+p + scale_x_datetime(breaks = scales::date_breaks("10 min"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+p
+p <-ggplot(plot, aes(time, distances)) + geom_point()
+p
+p + scale_x_datetime(breaks = scales::date_breaks("1 min"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+plot$time2<- as.POSIXct(plot$time2, format="%H:%M")
+p <-ggplot(plot, aes(time, distances)) + geom_point()
+p + scale_x_datetime(breaks = scales::date_breaks("10 min"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+plot$time2<- as.POSIXct(plot$time2, format="%H:%M")
+p <-ggplot(plot, aes(time2, distances)) + geom_point()
+p + scale_x_datetime(breaks = scales::date_breaks("10 min"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+plot$time2<- as.POSIXct(plot$time2, format="%H:%M")
+p <-ggplot(plot, aes(time2, distances)) + geom_point()
+p + scale_x_datetime(breaks = scales::date_breaks("1 min"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+plot$time2<- as.POSIXct(plot$time2, format="%H:%M")
+p <-ggplot(plot, aes(time2, distances)) + geom_point()
+p + scale_x_datetime(breaks = scales::date_breaks("1 min"), minor_breaks=scales::date_breaks("30 min"), labels=date_format("%H:%M:%S"))
+plot$time2
+tracks_sf_BNG_pt %>%
+as.data.frame %>%
+filter(date=="2016-09-01") %>%
+mutate(time2 = format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:%S",tz = "GMT")) ,format = "%H:%M"))
+hist(.)
+ggplot(tracks_sf_BNG_pt, aes(date, distances)) + geom_line() +
+scale_x_date(format = "%b-%Y") + xlab("") + ylab("Daily Views")
+keyplaces<-subset(places, name=="Work")
+keyplaces<-keyplaces[1,]
+keyplaces_sf_pt<-st_as_sf(keyplaces, coords = c("longitude", "latitude"),crs = 4326)
+keyplaces_sf_BNG_pt<-st_transform(keyplaces_sf_pt, 27700)
+tracks_sf_BNG_pt$distances <- as.numeric(st_distance(x = tracks_sf_BNG_pt, y = keyplaces_sf_BNG_pt))
+View(tracks_sf_BNG_pt)
+tracks_sf_BNG_pt
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01")
+# geomtery is sticky with dplyr verbs
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01")
+# geomtery is sticky with dplyr verbs
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01")
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01")
+?getData
+# calculate Minimal convex polygon for each
+library(adehabitatHR)
+tracksSPDF<-as(tracks_sf_pt, "Spatial")
+track_poly <- mcp(tracksSPDF[,4], percent=95)
+mcp_sf_pt<-st_as_sf(track_poly, coords = c("longitude", "latitude"),crs = 4326)
+mapviewOptions(layers.control.pos = "topright")
+mapview(list(tracks_sf, mcp_sf_pt))
+# Simple
+library(dplyr)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+plot(.)
+cols <- colorRampPalette(brewer.pal(9, "Blues"))
+library(brewlibrary(RColorBrewer)
+cols <- colorRampPalette(brewer.pal(9, "Blues")))
+library(RColorBrewer)
+cols <- colorRampPalette(brewer.pal(9, "Blues"))
+# geomtery is sticky with dplyr verbs
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01") %>%
+mapview(., zcol = "distances", cex = "distances", color = "black",
+fillColor = cols(100), alpha.regions = .8)
+cols <- colorRampPalette(brewer.pal(9, "Blues"))
+cols
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01") %>%
+mapview(., zcol = "distances", cex = "distances", color = "black",
+fillColor = cols(100), alpha.regions = .8)
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01") %>%
+mapview(., zcol = "distances", cex = "distances", color = "black")
+# geomtery is sticky with dplyr verbs
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01") %>%
+mapview(., zcol = "distances", cex = "distances", color = "black")
+# Activity count
+library(dplyr)
+activitybarplot<-tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+group_by(activity) %>%
+summarise(activitycount=sum(count)) %>%
+ggplot(., aes(x=activity, y=activitycount)) +geom_bar(stat = "identity")
+activitybarplot
+# Activity count
+library(dplyr)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+group_by(activity) %>%
+summarise(activitycount=sum(count)) %>%
+ggplot(., aes(x=activity, y=activitycount)) +geom_bar(stat = "identity")
+tracks_sf_pt<-st_as_sf(tracks, coords = c("longitude", "latitude"),crs = 4326)
+library(mapview)
+mapview(tracks_sf)
+?geom_bar
+names(tracks)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+ggplot(., aes(x=activity, y=activity)) +geom_bar(stat = "count")
+library(dplyr)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+group_by(activity) %>%
+summarise(activitycount=sum(count)) %>%
+ggplot(., aes(x=activity, y=activitycount)) +geom_bar(stat = "identity")
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%d-%m-%YT%H:%M:S",tz="GMT")) ,format = "%H:%M"))
+time<-"2016-09-01T09:59:43.000+01:00"
+format(as.POSIXct(strptime(time,"%d-%m-%YT%H:%M:S",tz="GMT")) ,format = "%H:%M")
+format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:S",tz="GMT")) ,format = "%H:%M")
+time<-"2016-09-01T09:59:43.000+01:00"
+format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M:S",tz="GMT")) ,format = "%H:%M")
+time<-"2016-09-01T09:59:43.000+01:00"
+time
+format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H:%M")
+format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H")
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(time2) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=activity, y=hourcount)) +geom_bar(stat = "identity")
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(time2) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=hour, y=hourcount)) +geom_bar(stat = "identity")
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(time2) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=time2, y=hourcount)) +geom_bar(stat = "identity")
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(time2) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=time2, y=hourcount)) +geom_bar(stat = "identity") + xlim(00, 24)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(time2) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=time2, y=hourcount)) +geom_bar(stat = "identity") + xlim(0, 24)
+time2
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))
+library(dplyr)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(time2) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=time2, y=hourcount)) +geom_bar(stat = "identity") + xlim(0, 24)
+library(dplyr)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(time2=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(time2) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=time2, y=hourcount)) +geom_bar(stat = "identity")
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(hour=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(hour) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=hour, y=hourcount)) +geom_bar(stat = "identity")
+names(tracks)
+tracks_sf_pt<-st_as_sf(tracks, coords = c("longitude", "latitude"),crs = 4326)
+library(mapview)
+mapview(tracks_sf)
+tribute Data- Activity count
+library(dplyr)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+group_by(activity) %>%
+summarise(activitycount=sum(count)) %>%
+ggplot(., aes(x=activity, y=activitycount)) +geom_bar(stat = "identity")
+library(dplyr)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(hour=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(hour) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=hour, y=hourcount)) +geom_bar(stat = "identity")
+library(dplyr)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+plot(.)
+tracks_sf_pt<-st_as_sf(tracks, coords = c("longitude", "latitude"),crs = 4326)
+library(mapview)
+mapview(tracks_sf)
+tracks %>%
+st_as_sf(tracks, coords = c("longitude", "latitude"),crs = 4326) %>%
+mapview(.)
+tracks %>%
+st_as_sf(., coords = c("longitude", "latitude"),crs = 4326) %>%
+mapview(.)
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+group_by(activity) %>%
+summarise(activitycount=sum(count)) %>%
+ggplot(., aes(x=activity, y=activitycount)) +geom_bar(stat = "identity")
+tracks %>%
+sf::st_as_sf(coords = c("longitude","latitude")) %>%
+sf::st_set_crs(4326) %>%
+st_cast("MULTIPOINT") %>%
+mutate(count=1) %>%
+mutate(hour=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+group_by(hour) %>%
+summarise(hourcount=sum(count)) %>%
+ggplot(., aes(x=hour, y=hourcount)) +geom_bar(stat = "identity")
+tracksSPDF<-as(tracks_sf_pt, "Spatial")
+track_poly <- mcp(tracksSPDF[,4], percent=95)
+mcp_sf_pt<-st_as_sf(track_poly, coords = c("longitude", "latitude"),crs = 4326)
+mapviewOptions(layers.control.pos = "topright")
+mapview(list(tracks_sf, mcp_sf_pt))
+?mapview
+library(adehabitatHR)
+tracksSPDF<-as(tracks_sf_pt, "Spatial")
+track_poly <- mcp(tracksSPDF[,4], percent=95)
+mcp_sf_pt<-st_as_sf(track_poly, coords = c("longitude", "latitude"),crs = 4326)
+mapviewOptions(layers.control.pos = "topright")
+mapview(list(tracks_sf, mcp_sf_pt), alpha.regions = 0.5)
+# Geographic data - calculate Minimal convex polygon for each
+library(adehabitatHR)
+tracksSPDF<-as(tracks_sf_pt, "Spatial")
+track_poly <- mcp(tracksSPDF[,4], percent=95)
+mcp_sf_pt<-st_as_sf(track_poly, coords = c("longitude", "latitude"),crs = 4326)
+mapviewOptions(layers.control.pos = "topright")
+mapview(list(tracks_sf, mcp_sf_pt), alpha.regions = 0.2)
+# geomtery is sticky with dplyr verbs
+tracks_sf_BNG_pt %>%
+st_cast("MULTIPOINT") %>%
+filter(date=="2016-09-01") %>%
+mapview(., zcol = "distances", cex = "distances", color = "black")

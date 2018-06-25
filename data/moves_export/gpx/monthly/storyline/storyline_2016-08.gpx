@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx 
+creator="Moves" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:tns="http://www.topografix.com/GPX/1/1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <desc>Moves Storyline</desc>
+    <link href="http://www.moves-app.com"/>
+    <time>2018-06-20T12:32:04.233Z</time>
+  </metadata>
+  <wpt lon="-3.2505118" lat="55.926374">
+    <name>Place in Slateford, Slateford</name>
+  </wpt>
+  <wpt lon="-3.1842278999999998" lat="55.94838400000001">
+    <name>Work</name>
+    <type>Work</type>
+  </wpt>
+  <wpt lon="-3.2509906" lat="55.926292">
+    <name>Place in Slateford, Slateford</name>
+  </wpt>
+  <trk>
+    <name>31/08/16</name>
+    <trkseg>
+      <trkpt lon="-3.2505118" lat="55.926374">
+        <time>2016-08-31T09:43:58.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2505118" lat="55.926374">
+        <time>2016-08-31T09:50:31.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2505118" lat="55.926374">
+        <time>2016-08-31T09:50:31.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2471586" lat="55.927943">
+        <time>2016-08-31T09:50:53.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2469777" lat="55.928198">
+        <time>2016-08-31T09:51:10.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2471081" lat="55.928313">
+        <time>2016-08-31T09:51:27.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2468402" lat="55.928001">
+        <time>2016-08-31T09:51:47.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.246145" lat="55.927406">
+        <time>2016-08-31T09:52:15.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2448716" lat="55.926979">
+        <time>2016-08-31T09:52:31.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2439746" lat="55.926931">
+        <time>2016-08-31T09:52:56.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2439746" lat="55.926931">
+        <time>2016-08-31T09:53:21.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2417601" lat="55.928075">
+        <time>2016-08-31T09:53:53.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2400149" lat="55.929536">
+        <time>2016-08-31T09:54:18.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2375537" lat="55.931451">
+        <time>2016-08-31T09:54:46.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2360851" lat="55.932797">
+        <time>2016-08-31T09:55:14.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2347558" lat="55.933545">
+        <time>2016-08-31T09:55:30.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2325799" lat="55.934522">
+        <time>2016-08-31T09:55:54.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2295604" lat="55.935904">
+        <time>2016-08-31T09:56:21.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2277905" lat="55.936718">
+        <time>2016-08-31T09:56:41.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2252103" lat="55.937932">
+        <time>2016-08-31T09:57:06.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2224876" lat="55.939467">
+        <time>2016-08-31T09:57:40.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2196603" lat="55.94009">
+        <time>2016-08-31T09:58:13.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2171521" lat="55.940718">
+        <time>2016-08-31T09:58:35.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2148451" lat="55.941694">
+        <time>2016-08-31T09:58:56.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2122073" lat="55.942474">
+        <time>2016-08-31T09:59:19.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2093183" lat="55.943144">
+        <time>2016-08-31T09:59:43.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2084995" lat="55.943419">
+        <time>2016-08-31T09:59:59.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.208499" lat="55.943419">
+        <time>2016-08-31T10:00:00.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2079987" lat="55.943587">
+        <time>2016-08-31T10:00:10.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2062721" lat="55.944631">
+        <time>2016-08-31T10:00:32.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2066966" lat="55.945531">
+        <time>2016-08-31T10:00:51.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2055366" lat="55.945798">
+        <time>2016-08-31T10:01:11.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2034896" lat="55.945861">
+        <time>2016-08-31T10:01:34.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2013029" lat="55.945483">
+        <time>2016-08-31T10:02:11.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2005073" lat="55.945011">
+        <time>2016-08-31T10:02:27.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2001772" lat="55.944892">
+        <time>2016-08-31T10:02:46.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2001857" lat="55.944871">
+        <time>2016-08-31T10:03:07.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1994211" lat="55.944965">
+        <time>2016-08-31T10:03:44.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1971527" lat="55.944931">
+        <time>2016-08-31T10:04:15.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1958956" lat="55.944989">
+        <time>2016-08-31T10:04:30.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1915181" lat="55.945491">
+        <time>2016-08-31T10:05:10.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1907408" lat="55.945609">
+        <time>2016-08-31T10:05:33.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1909545" lat="55.946629">
+        <time>2016-08-31T10:06:00.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1912964" lat="55.946959">
+        <time>2016-08-31T10:06:16.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1896029" lat="55.947467">
+        <time>2016-08-31T10:06:48.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1877818" lat="55.94783">
+        <time>2016-08-31T10:07:04.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1842279" lat="55.948384">
+        <time>2016-08-31T10:07:27.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T10:07:27.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T12:34:39.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842279" lat="55.948384">
+        <time>2016-08-31T12:34:39.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1842083" lat="55.94842">
+        <time>2016-08-31T12:34:54.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1841941" lat="55.948425">
+        <time>2016-08-31T12:35:09.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1844479" lat="55.948376">
+        <time>2016-08-31T12:35:34.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1844348" lat="55.948406">
+        <time>2016-08-31T12:35:50.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1848069" lat="55.948353">
+        <time>2016-08-31T12:36:08.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.185311" lat="55.948253">
+        <time>2016-08-31T12:36:28.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1860217" lat="55.948066">
+        <time>2016-08-31T12:37:21.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1862713" lat="55.948049">
+        <time>2016-08-31T12:37:37.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.186655" lat="55.948151">
+        <time>2016-08-31T12:38:18.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866868" lat="55.948207">
+        <time>2016-08-31T12:38:35.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1867101" lat="55.948352">
+        <time>2016-08-31T12:38:53.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866486" lat="55.94829">
+        <time>2016-08-31T12:39:16.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T12:39:16.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T12:42:50.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842279" lat="55.948384">
+        <time>2016-08-31T12:42:50.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1867089" lat="55.948353">
+        <time>2016-08-31T12:43:28.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866974" lat="55.948248">
+        <time>2016-08-31T12:43:57.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866916" lat="55.948152">
+        <time>2016-08-31T12:44:14.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1866234" lat="55.948128">
+        <time>2016-08-31T12:44:30.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1862134" lat="55.948025">
+        <time>2016-08-31T12:45:03.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1857655" lat="55.948123">
+        <time>2016-08-31T12:45:23.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.185379" lat="55.948279">
+        <time>2016-08-31T12:45:44.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1849868" lat="55.948451">
+        <time>2016-08-31T12:46:00.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1841723" lat="55.948417">
+        <time>2016-08-31T12:46:28.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1840814" lat="55.948377">
+        <time>2016-08-31T12:46:44.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1842721" lat="55.948412">
+        <time>2016-08-31T12:47:07.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+      <trkpt lon="-3.1842279" lat="55.948384">
+        <time>2016-08-31T12:47:34.000+01:00</time>
+        <type>walking</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T12:47:34.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T20:42:37.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842279" lat="55.948384">
+        <time>2016-08-31T20:42:37.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1859234" lat="55.948009">
+        <time>2016-08-31T20:43:08.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1864893" lat="55.947938">
+        <time>2016-08-31T20:43:25.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1865986" lat="55.947919">
+        <time>2016-08-31T20:43:47.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.186828" lat="55.947946">
+        <time>2016-08-31T20:44:10.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1874655" lat="55.947912">
+        <time>2016-08-31T20:44:28.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1895907" lat="55.947471">
+        <time>2016-08-31T20:44:50.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1909614" lat="55.94704">
+        <time>2016-08-31T20:45:08.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1901136" lat="55.945901">
+        <time>2016-08-31T20:45:34.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1913253" lat="55.945194">
+        <time>2016-08-31T20:45:54.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1936287" lat="55.945051">
+        <time>2016-08-31T20:46:11.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1965375" lat="55.944922">
+        <time>2016-08-31T20:46:38.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1986662" lat="55.944957">
+        <time>2016-08-31T20:46:59.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.1996518" lat="55.944909">
+        <time>2016-08-31T20:47:15.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2004392" lat="55.944723">
+        <time>2016-08-31T20:47:38.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2033975" lat="55.943937">
+        <time>2016-08-31T20:48:33.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2038868" lat="55.943805">
+        <time>2016-08-31T20:48:49.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2061063" lat="55.94381">
+        <time>2016-08-31T20:49:14.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2079076" lat="55.94354">
+        <time>2016-08-31T20:49:35.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2085543" lat="55.943078">
+        <time>2016-08-31T20:49:58.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2090544" lat="55.942517">
+        <time>2016-08-31T20:50:18.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2108751" lat="55.941637">
+        <time>2016-08-31T20:50:54.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2117201" lat="55.941157">
+        <time>2016-08-31T20:51:13.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2127622" lat="55.940816">
+        <time>2016-08-31T20:51:29.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2163424" lat="55.939512">
+        <time>2016-08-31T20:52:11.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2168162" lat="55.939321">
+        <time>2016-08-31T20:52:32.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2181926" lat="55.938791">
+        <time>2016-08-31T20:52:51.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2190411" lat="55.938421">
+        <time>2016-08-31T20:53:08.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2201777" lat="55.93796">
+        <time>2016-08-31T20:53:26.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2216185" lat="55.937243">
+        <time>2016-08-31T20:53:47.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2254231" lat="55.933216">
+        <time>2016-08-31T20:55:29.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2262999" lat="55.932431">
+        <time>2016-08-31T20:55:48.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2266634" lat="55.93152">
+        <time>2016-08-31T20:56:04.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2271568" lat="55.931096">
+        <time>2016-08-31T20:56:20.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2275205" lat="55.930163">
+        <time>2016-08-31T20:56:39.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2391987" lat="55.924853">
+        <time>2016-08-31T20:59:11.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2409672" lat="55.924168">
+        <time>2016-08-31T20:59:34.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2427163" lat="55.924391">
+        <time>2016-08-31T20:59:50.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2435423" lat="55.92426">
+        <time>2016-08-31T20:59:59.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2435432" lat="55.92426">
+        <time>2016-08-31T21:00:00.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2443222" lat="55.924136">
+        <time>2016-08-31T21:00:08.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2453559" lat="55.923924">
+        <time>2016-08-31T21:00:24.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2471949" lat="55.92381">
+        <time>2016-08-31T21:00:54.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2480715" lat="55.923927">
+        <time>2016-08-31T21:01:10.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2491825" lat="55.924219">
+        <time>2016-08-31T21:01:36.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-08-31T21:02:35.000+01:00</time>
+        <type>cycling</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-08-31T21:02:36.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

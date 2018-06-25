@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1529594044891.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "24|24|34|0|\n",
+    "hash" : "0",
+    "id" : "CA606314",
+    "lastKnownWriteTime" : 1529596026,
+    "last_content_update" : 1529596026075,
+    "path" : "C:/Users/mcherrie/Google Drive/Presentations/Presentations/SF/SF_example/processdata2.R",
+    "project_path" : "processdata2.R",
+    "properties" : {
+        "cursorPosition" : "16,23",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

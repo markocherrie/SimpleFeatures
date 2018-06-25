@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx 
+creator="Moves" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:tns="http://www.topografix.com/GPX/1/1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <desc>Moves Storyline</desc>
+    <link href="http://www.moves-app.com"/>
+    <time>2018-06-20T12:32:04.242Z</time>
+  </metadata>
+  <wpt lon="-3.2505118" lat="55.926374">
+    <name>Place in Slateford, Slateford</name>
+  </wpt>
+  <wpt lon="-3.1842278999999998" lat="55.94838400000001">
+    <name>Work</name>
+    <type>Work</type>
+  </wpt>
+  <wpt lon="-3.2509906" lat="55.926292">
+    <name>Place in Slateford, Slateford</name>
+  </wpt>
+  <wpt lon="-3.2342842" lat="55.923153">
+    <name>Place in Craiglockhart, Edinburgh</name>
+  </wpt>
+  <wpt lon="-3.1869095563889" lat="55.948495452493">
+    <name>Costa Coffee</name>
+  </wpt>
+  <wpt lon="-3.228312634811668" lat="55.93449111680904">
+    <name>Home</name>
+    <type>Home</type>
+  </wpt>
+  <wpt lon="-3.1851943" lat="55.946014">
+    <name>Place in Edinburgh</name>
+  </wpt>
+  <wpt lon="-3.186982" lat="55.955484">
+    <name>Place in New Town, Edinburgh</name>
+  </wpt>
+  <wpt lon="-3.1870993" lat="55.956047">
+    <name>Place in New Town, Edinburgh</name>
+  </wpt>
+  <wpt lon="-3.2293615" lat="55.933168">
+    <name>Place in Shandon, Edinburgh</name>
+  </wpt>
+  <trk>
+    <name>31/08/16</name>
+    <trkseg>
+      <trkpt lon="-3.2505118" lat="55.926374">
+        <time>2016-08-31T09:43:58.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2505118" lat="55.926374">
+        <time>2016-08-31T09:50:31.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T10:07:27.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T12:34:39.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T12:39:16.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T12:42:50.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T12:47:34.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-08-31T20:42:37.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-08-31T21:02:36.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>01/09/16</name>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T09:59:43.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-09-01T10:15:53.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-09-01T19:07:45.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T19:27:52.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T20:59:39.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2342842" lat="55.923153">
+        <time>2016-09-01T21:04:59.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2342842" lat="55.923153">
+        <time>2016-09-01T22:24:19.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T22:27:14.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-02T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>02/09/16</name>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-02T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-02T03:14:37.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>18/06/18</name>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-18T13:17:58.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-18T16:47:04.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1869095563889" lat="55.948495452493">
+        <time>2018-06-18T16:51:29.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1869095563889" lat="55.948495452493">
+        <time>2018-06-18T17:30:15.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-18T17:34:26.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-18T19:38:46.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-18T19:50:37.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-19T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>19/06/18</name>
+    <trkseg>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-19T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-19T09:56:15.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-19T10:09:41.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-19T13:04:16.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1851943" lat="55.946014">
+        <time>2018-06-19T13:09:02.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1851943" lat="55.946014">
+        <time>2018-06-19T13:26:33.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-19T13:33:15.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2018-06-19T16:51:53.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.186982" lat="55.955484">
+        <time>2018-06-19T17:03:37.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.186982" lat="55.955484">
+        <time>2018-06-19T17:54:54.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1870993" lat="55.956047">
+        <time>2018-06-19T17:57:56.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1870993" lat="55.956047">
+        <time>2018-06-19T18:06:23.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-19T18:38:13.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-20T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>20/06/18</name>
+    <trkseg>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-20T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-20T10:38:57.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2293615" lat="55.933168">
+        <time>2018-06-20T10:45:54.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2293615" lat="55.933168">
+        <time>2018-06-20T10:46:53.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-20T10:51:06.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.228312634811668" lat="55.93449111680904">
+        <time>2018-06-20T13:12:31.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

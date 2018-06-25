@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx 
+creator="Moves" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:tns="http://www.topografix.com/GPX/1/1" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata>
+    <desc>Moves Storyline</desc>
+    <link href="http://www.moves-app.com"/>
+    <time>2018-06-20T12:32:04.156Z</time>
+  </metadata>
+  <wpt lon="-3.2509906" lat="55.926292">
+    <name>Place in Slateford, Slateford</name>
+  </wpt>
+  <wpt lon="-3.1842278999999998" lat="55.94838400000001">
+    <name>Work</name>
+    <type>Work</type>
+  </wpt>
+  <wpt lon="-3.2342842" lat="55.923153">
+    <name>Place in Craiglockhart, Edinburgh</name>
+  </wpt>
+  <trk>
+    <name>01/09/16</name>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T09:59:43.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-09-01T10:15:53.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.1842278999999998" lat="55.94838400000001">
+        <time>2016-09-01T19:07:45.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T19:27:52.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T20:59:39.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2342842" lat="55.923153">
+        <time>2016-09-01T21:04:59.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2342842" lat="55.923153">
+        <time>2016-09-01T22:24:19.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-01T22:27:14.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+      <trkpt lon="-3.2509906" lat="55.926292">
+        <time>2016-09-02T00:00:00.000+01:00</time>
+        <type>place</type>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

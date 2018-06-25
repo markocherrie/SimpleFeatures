@@ -1,0 +1,34 @@
+labelid,description,uri,naturalness
+431,alley,,-1
+432,angle,,0
+433,automotive exterior,,-1
+434,brand,,0
+435,bus,,-1
+436,car,,-1
+437,concrete bridge,,-1
+438,ferry,,-1
+439,fixed link,,0
+440,font,,0
+441,girder bridge,,-1
+442,guard rail,,-1
+443,infrastructure,,-1
+444,land lot,,-1
+445,line,,0
+446,luxury vehicle,,-1
+447,motor vehicle,,-1
+448,plant community,,1
+449,rectangle,,0
+450,road trip,,-1
+451,skyway,,-1
+452,steel,,-1
+453,subcompact car,,-1
+454,text,,0
+455,thoroughfare,,0
+456,tours,,0
+457,urban design,,-1
+458,water transportation,,-1
+459,windshield,,-1
+460,mixed use,,0
+461,public space,,1
+462,technology,,-1
+463,tourism,,0

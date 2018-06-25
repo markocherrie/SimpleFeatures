@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1529581870242.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7508C2ED",
+    "lastKnownWriteTime" : 1529604093,
+    "last_content_update" : 1529604093957,
+    "path" : "C:/Users/mcherrie/Google Drive/Presentations/Presentations/SF/SF_example/getdata.R",
+    "project_path" : "getdata.R",
+    "properties" : {
+        "cursorPosition" : "12,71",
+        "scrollLine" : "5"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

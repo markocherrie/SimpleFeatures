@@ -1,0 +1,431 @@
+labelid,description,uri,naturalness
+1,residential area,/m/02nfxt,-1
+2,neighbourhood,/m/0180xr,0
+3,estate,/m/038t8_,-1
+4,plaza,/m/01klb9,-1
+5,property,/m/05wrt,-1
+6,walkway,/m/01jm2n,-1
+7,real estate,/m/023907r,-1
+8,town,/m/0dx1j,-1
+9,courtyard,/m/0lf0n,-1
+10,condominium,/m/020ys5,-1
+11,flooring,/m/01c34b,-1
+12,villa,/m/01y8xw,-1
+13,shore,/m/02fm9k,1
+14,vehicle,/m/07yv9,-1
+15,flower,/m/0c9ph5,1
+16,boat,/m/019jd,-1
+17,sea,/m/06npx,1
+18,boating,/m/03m4wn,-1
+19,watercraft,/m/01rzcn,-1
+20,lake,/m/04h4w,1
+21,house,/m/03jm5,-1
+22,mansion,/m/02pvbb,-1
+23,garden,/m/0bl0l,1
+24,yard,/m/049_3v,1
+25,lawn,/m/01v327,1
+26,memorial,/m/02q3d5,-1
+27,backyard,/m/0hrcj2p,1
+28,grass,/m/08t9c_,1
+29,cottage,/m/03nxtz,-1
+30,tree,/m/07j7r,1
+31,shrub,/m/0gqbt,1
+32,landscaping,/m/025sv9y,1
+33,waterway,/m/017m8l,1
+34,river,/m/06cnp,1
+35,subway,/m/0b_hy9,-1
+36,farm,/m/0g8p9,0
+37,transport,/m/07bsy,-1
+38,green,/m/038hg,1
+39,park,/m/0166ls,1
+40,forest,/m/02zr8,1
+41,spring,/m/01ty0n,1
+42,wall,/m/09qqq,-1
+43,driveway,/m/04w8xt,-1
+44,structure,/m/0n68_,-1
+45,pergola,/m/04z_y4,1
+46,outdoor structure,/m/0h8lhsd,0
+47,color,/m/01sdr,0
+48,yellow,/m/088fh,0
+49,leaf,/m/09t49,1
+50,swimming pool,/m/0b_rs,-1
+51,amusement park,/m/010jjr,-1
+52,water park,/m/01wt5r,-1
+53,community,/m/01qls,-1
+54,plant,/m/05s2s,1
+55,herb,/m/03gq1,1
+56,watercourse,/m/03kj4q,1
+57,stream,/m/0j6m2,1
+58,body of water,/m/03ktm1,1
+59,rock,/m/01cbzq,1
+60,water feature,/m/090j23,1
+61,bedrock,/m/0308t8,1
+62,stream bed,/m/01rsdb,1
+63,landscape,/m/025s3q0,1
+64,pond,/m/0184rb,1
+65,stone wall,/m/0bysjw,0
+66,city,/m/01n32,-1
+67,road,/m/06gfj,-1
+68,street,/m/01c8br,-1
+69,town square,/m/01wkk9,-1
+70,panorama,/m/017rtb,0
+71,reservoir,/m/093shy,1
+72,cityscape,/m/034z7h,-1
+73,downtown,/m/01l7t2,-1
+74,urban area,/m/039jbq,-1
+75,village,/m/0f0q9,-1
+76,architecture,/m/03nfmq,-1
+77,building,/m/0cgh4,-1
+78,habitat,/m/05fblh,1
+79,pasture,/m/01gd91,1
+80,meadow,/m/025st_8,1
+81,mound,/m/07bn8z,0
+82,wood,/m/083vt,1
+83,reflection,/m/02l215,0
+84,porch,/m/04m6gz,-1
+85,home,/m/01l0mw,-1
+86,picket fence,/m/0874qq,-1
+87,fence,/m/0blz9,-1
+88,brickwork,/m/01__sk,-1
+89,flagstone,/m/03nsfg,-1
+90,labyrinth,/m/04msr,-1
+91,amphitheatre,/m/0f48p,-1
+92,race track,/m/01r_pn,-1
+93,soil,/m/09dv7,1
+94,daylily,/m/01ngsj,1
+95,construction,/m/01jnzj,-1
+96,reflecting pool,/m/02yq2x,1
+97,handrail,/m/07p_zw,-1
+98,facade,/m/01x314,-1
+99,clematis,/m/0l2mx,1
+100,purple,/m/09ggk,0
+101,flora,/m/03bmqb,1
+102,flowering plant,/m/04sjm,1
+103,viola,/m/014sg5,1
+104,bellflower family,/m/03h6l4,1
+105,arch,/m/0dpvm,0
+106,woodland,/m/0hnc1,1
+107,autumn,/m/0134l,1
+108,season,/m/0754v,1
+109,light,/m/04k84,0
+110,phenomenon,/m/0gjyk,0
+111,sunlight,/m/06z0n,1
+112,morning,/m/02_ktj,1
+113,path,/m/02zh30,0
+114,natural environment,/m/02py09,1
+115,maple tree,/m/0cffdh,1
+116,hacienda,/m/01rlnn,-1
+117,gate,/m/03c79,-1
+118,gazebo,/m/02y8mg,1
+119,deck,/m/03q13l,0
+120,rolling stock,/m/025s53m,-1
+121,furniture,/m/0c_jw,-1
+122,shed,/m/01n6fd,-1
+123,statue,/m/013_1c,-1
+124,monument,/m/02ljgl,-1
+125,cloud,/m/0csby,1
+126,chapel,/m/0173tc,-1
+127,farmhouse,/m/080sjd,-1
+128,ranch,/m/08w8zl,-1
+129,area,/m/0n0j,0
+130,resort,/m/02dkrm,0
+131,signage,/m/0bkqqh,-1
+132,roof,/m/06hyd,-1
+133,playground,/m/01h_1n,-1
+134,outdoor play equipment,/m/0h8jmzl,-1
+135,play,/m/06wtgq,0
+136,outdoor recreation,/m/05b0n7k,-1
+137,vacation,/m/02jwqh,0
+138,rainforest,/m/0d8cn,1
+139,jungle,/m/01y3fy,1
+140,landscape lighting,/m/090pbr,0
+141,spring,/m/01txr2,1
+142,circle,/m/01vkl,0
+143,road surface,/m/01k0mv,-1
+144,suburb,/m/0750y,-1
+145,campus,/m/01_x9,-1
+146,bicycle,/m/0199g,-1
+147,sports equipment,/m/05y5lj,-1
+148,sculpture,/m/06msq,-1
+149,grazing,/m/03hh2k,1
+150,sport venue,/m/0bmgjqz,-1
+151,tile,/m/021w6f,-1
+152,wilderness,/m/023bbt,1
+153,old growth forest,/m/042g2h,1
+154,brick,/m/01g0g,-1
+155,cobblestone,/m/02t2zd,-1
+156,snow,/m/06_dn,1
+157,winter,/m/086mh,1
+158,weather,/m/0866r,1
+159,hut,/m/08yp1s,-1
+160,blizzard,/m/01g81,1
+161,geological phenomenon,/m/07sn5gn,1
+162,nature,/m/05h0n,1
+163,vegetation,/m/01fnns,1
+164,bridge,/m/015kr,-1
+165,asphalt,/m/0hr8,-1
+166,trail,/m/0hm03,1
+167,aisle,/m/01rd5z,-1
+168,hydrangeaceae,/m/01ls_1,1
+169,home appliance,/m/019dx1,-1
+170,shrine,/m/02cwf_,0
+171,ancient history,/m/0djmp,0
+172,ruins,/m/03d1rd,0
+173,produce,/m/036qh8,0
+174,rural area,/m/01f4td,1
+175,vegetable,/m/0f4s2w,1
+176,food,/m/02wbm,1
+177,fruit,/m/02xwb,1
+178,humulus lupulus,/m/025s187,1
+179,hardy kiwi,/m/0bqhkk,1
+180,agriculture,/m/0hkf,1
+181,runner bean,/m/02gv5f,1
+182,temperate broadleaf and mixed forest,/m/01cv98,1
+183,courthouse,/m/0g02q,-1
+184,headquarters,/m/037rzs,-1
+185,education,/m/02jfc,-1
+186,school,/m/06zdj,-1
+187,toy,/m/0138tl,-1
+188,boardwalk,/m/03y3sg,-1
+189,cemetery,/m/0h36z,-1
+190,grave,/m/01vw0_,-1
+191,headstone,/m/02vk6x,-1
+192,water,/m/0838f,1
+193,overpass,/m/02500f,-1
+194,baseball field,/m/03v7tf,-1
+195,soccer specific stadium,/m/0404y4,-1
+196,stadium,/m/019cfy,-1
+197,crop,/m/0263lr1,1
+198,totem pole,/m/0jt7c,-1
+199,field,/m/0brn2d,1
+200,wetland,/m/0pvlz,1
+201,swamp,/m/0lvlk,1
+202,marsh,/m/016nsr,1
+203,arthropod,/m/0zkm,1
+204,spider web,/m/01tksn,1
+205,spider,/m/09kmb,1
+206,natural material,/m/07sx2n,1
+207,coast,/m/01lxd,1
+208,headland,/m/04gv79h,1
+209,landform,/m/01l56l,1
+210,ocean,/m/05kq4,1
+211,promontory,/m/02r3_7_,1
+212,bay,/m/04ggh49,1
+213,beach,/m/0b3yr,1
+214,cove,/m/01p468,1
+215,cliff,/m/018vpr,1
+216,skerry,/m/03bqt1,1
+217,conifer,/m/0hv3g,1
+218,pink,/m/01fklc,0
+219,pinkladies,/m/06m8v4,1
+220,narrow leaved sundrops,/m/0661qgr,1
+221,pink evening primrose,/m/03c5g7m,1
+222,blue,/m/01g5v,0
+223,loch,/m/04p25,1
+224,sand,/m/099fz,1
+225,floodplain,/m/0j6jq,1
+226,mountain,/m/09d_r,1
+227,mountain range,/m/04wxr,1
+228,ridge,/m/0355cw,1
+229,shrubland,/m/06w1j5,1
+230,berry,/m/0dxb5,1
+231,ravine,/m/025s35_,1
+232,grassland,/m/01c7cq,1
+233,steppe,/m/0f45l,1
+234,plain,/m/05sm1,1
+235,tundra,/m/07k3c,1
+236,prairie,/m/0hkvx,1
+237,valley,/m/07yxk,1
+238,bog,/m/012v8q,1
+239,fish pond,/m/05qb9l1,1
+240,atmospheric phenomenon,/m/07pw27b,1
+241,shoal,/m/01r3xn,1
+242,trunk,/m/02tcwp,1
+243,tree stump,/m/0d9wys,1
+244,root,/m/0flg6,1
+245,creek,/m/03ybsm,1
+246,valdivian temperate rain forest,/m/02jvk3,1
+247,waterfall,/m/0j2kx,1
+248,bank,/m/05t0z3q,1
+249,rapid,/m/06gl1,1
+250,riparian zone,/m/096xlh,1
+251,lagoon,/m/0l154,1
+252,cape,/m/080byt0,1
+253,peninsula,/m/05sl2,1
+254,hill station,/m/040h04,-1
+255,tarn,/m/02ntq6,1
+256,wind,/m/03m9d0z,1
+257,branch,/m/0b5gs,1
+258,storm,/m/0z71l,1
+259,overhead power line,/m/04w7nv,-1
+260,night,/m/01d74z,1
+261,dusk,/m/01b3l7,1
+262,traffic,/m/0btp2,-1
+263,lighting,/m/019sc6,-1
+264,taxi,/m/0pg52,-1
+265,skyline,/m/0204fg,0
+266,skyscraper,/m/079cl,-1
+267,siding,/m/037cyw,-1
+268,mural,/m/04rd7,-1
+269,business,/m/09s1f,-1
+270,advertising,/m/011s0,-1
+271,lane,/m/033j3c,0
+272,sidewalk,/m/0dnhy,-1
+273,parking,/m/01jp76,-1
+274,retail store,/m/0191_7,-1
+275,car park,/m/02jxn5,-1
+276,car dealership,/m/07n7lk,-1
+277,highway,/m/0cz_0,-1
+278,automobile,/m/0k4j,-1
+279,commercial building,/m/05hg54,-1
+280,tower block,/m/0vlys,-1
+281,crowd,/m/03qtwd,-1
+282,pedestrian,/m/017r8p,1
+283,horizon,/m/0d1n2,0
+284,track,/m/01vk9q,0
+285,cable car,/m/07s6bqg,-1
+286,street sign,/m/04jph85,-1
+287,traffic sign,/m/01mqdt,-1
+288,tower,/m/01fdzj,-1
+289,haze,/m/03xxq7,1
+290,landmark,/m/05_5t0l,0
+291,metropolitan area,/m/0j_s4,-1
+292,red,/m/06fvc,0
+293,spire,/m/01c6yl,-1
+294,sport utility vehicle,/m/0ctrp,-1
+295,land vehicle,/m/01prls,-1
+296,mode of transport,/m/079bkr,-1
+297,sports car,/m/012mq4,-1
+298,coupé,/m/01d1dj,-1
+299,wheel,/m/083wq,-1
+300,sedan,/m/021mp2,-1
+301,controlled access highway,/m/0335j,-1
+302,estuary,/m/0kh77,1
+303,sky,/m/01bqvp,1
+304,mudflat,/m/02p4bv,1
+305,family car,/m/088l6h,-1
+306,race car,/m/0ncqpsr,-1
+307,lobby,/m/027dwg0,-1
+308,street light,/m/033rq4,-1
+309,scaffolding,/m/01b958,-1
+310,arena,/m/018lrm,-1
+311,long distance running,/m/0m931,-1
+312,savanna,/m/01c7d3,1
+313,mountain bike,/m/0_mjp,-1
+314,executive car,/m/0crtnw,-1
+315,supercar,/m/014f__,-1
+316,hangar,/m/03z1rt,-1
+317,minivan,/m/057gn,-1
+318,mid size car,/m/03vnt4,-1
+319,hyundai i10,/m/03cr3jl,-1
+320,mercedes benz w212,/m/0c82_3,-1
+321,compact car,/m/02swz_,-1
+322,pier,/m/01phq4,-1
+323,mesh,/m/0413y3,-1
+324,wire fencing,/m/0h8xdq1,-1
+325,audi a5,/m/02zykd,-1
+326,white,/m/083jv,0
+327,recreational vehicle,/m/01lgkm,-1
+328,window,/m/0d4v4,-1
+329,door,/m/02dgv,-1
+330,sports sedan,/m/05sxvp,-1
+331,bmw m5,/m/04dvgq,-1
+332,hedge,/m/01xxn0,1
+333,auditorium,/m/039l3v,-1
+334,yorkshire terrier,/m/01_gx_,0
+335,black,/m/019sc,0
+336,engine,/m/02mk9,-1
+337,snapshot,/m/06pg22,-1
+338,restaurant,/m/06l8d,-1
+339,hot hatch,/m/0215_s,-1
+340,runway,/m/015zzv,-1
+341,apartment,/m/01nblt,-1
+342,jet aircraft,/m/015y8h,-1
+343,jeep,/m/03_qm,-1
+344,moat,/m/0142t_,0
+345,pc game,/m/04tr8s,-1
+346,fortification,/m/01czv3,-1
+347,factory,/m/0168g6,-1
+348,soldier,/m/099md,-1
+349,tram,/m/07kfm,-1
+350,double decker bus,/m/03n9vx,-1
+351,room,/m/06ht1,-1
+352,hill,/m/04_5sg,1
+353,nissan micra,/m/081t56,-1
+354,airport,/m/09cjl,-1
+355,mulberry,/m/016gq4,1
+356,bentley continental flying spur,/m/04_9s6,-1
+357,public transport,/m/05zdp,-1
+358,fell,/m/0280nh,1
+359,lupin,/m/01sh8v,1
+360,lavender,/m/04gth,1
+361,alfa romeo mito,/m/02pmvg7,-1
+362,third generation fiat punto,/m/03gq5vv,-1
+363,warehouse,/m/02nzw0,-1
+364,hall,/m/0d4vn,-1
+365,monastery,/m/0cfkj,-1
+366,castle,/m/0d5gx,-1
+367,flight,/m/01515d,-1
+368,takeoff,/m/015z_b,-1
+369,daylighting,/m/0k2n5,1
+370,classic car,/m/01xsb3,-1
+371,adventure,/m/0h_m,0
+372,gliding,/m/039r_,0
+373,sash window,/m/0bbbgt,-1
+374,professional,/m/01qkbx,-1
+375,tour bus service,/m/02w11w8,-1
+376,truck,/m/07r04,-1
+377,hurdle,/m/0410w_v,0
+378,maserati granturismo,/m/02pm5qq,-1
+379,sports,/m/06ntj,-1
+380,auto racing,/m/0ltv,-1
+381,motorsport,/m/0410tth,-1
+382,racing,/m/0dfbw,-1
+383,mercedes benz a class,/m/03w98r,-1
+384,bar,/m/01nz0z,-1
+385,tavern,/m/01nz0l,-1
+386,mountain pass,/m/020wcz,1
+387,photography,/m/05wkw,-1
+388,convenience store,/m/0crjs,-1
+389,dormitory,/m/01t_yc,-1
+390,human action,/m/07p82rh,-1
+391,physical exercise,/m/019w6h,0
+392,running,/m/06h7j,0
+393,honda insight,/m/02ddy8,-1
+394,airport apron,/m/0bbmgb,-1
+395,world rally championship,/m/01j0xm,-1
+396,motorcycle,/m/04_sv,-1
+397,loft,/m/04vmpm,-1
+398,van,/m/0h2r6,-1
+399,minibus,/m/045jsc,-1
+400,blossom,/m/0j7ty,1
+401,cherry blossom,/m/01wh_8,1
+402,rose family,/m/06dmh,1
+403,demolition,/m/02zrvn,-1
+404,levee,/m/0btcr,-1
+405,seat altea,/m/0423lt,-1
+406,fiat bravo,/m/05c0kwy,-1
+407,polder,/m/0cws7,1
+408,commercial vehicle,/m/0fkwjg,-1
+409,fiat palio,/m/0372vm,-1
+410,elderberry,/m/01c2vn,1
+411,hawthorn,/m/016x87,1
+412,paddy field,/m/02n7rn,1
+413,dirt road,/m/06nmjv,0
+414,canal,/m/01pvk,0
+415,shadbush,/m/016_bh,1
+416,birch,/m/0hpx4,1
+417,train,/m/07jdr,-1
+418,locomotive,/m/04h5c,-1
+419,rallying,/m/0dr19,-1
+420,ferrari spa,/m/02_kt,-1
+421,bmw 3 series e90,/m/03lftc,-1
+422,bmw m3,/m/03v0xl,-1
+423,wind farm,/m/03j5zb,-1
+424,machine,/m/0dkw5,-1
+425,transmission tower,/m/03fcmz,-1
+426,electricity,/m/02lts,-1
+427,freight transport,/m/070qm,-1
+428,shoulder,/m/02mgm6,0
+429,cumulus,/m/0csh5,1
+430,brassica,/m/0qmh4,1

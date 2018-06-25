@@ -1,0 +1,492 @@
+Simple Features in R
+========================================================
+author: Mark Cherrie
+date: 28/05/18
+autosize: false
+font-import: http://fonts.googleapis.com/css?family=Open+Sans
+font-family: 'Open Sans', sans-serif;
+
+<img src="logos/cresh_twitter.png" style="background-color:transparent; border:0px; box-shadow:none;top:550px; left:0px; position:absolute;z-index:9"></img>
+
+
+Geospatial Analysis in R
+========================================================
+
+<img src="images/spatial-package-growth.png" style="background-color:transparent; border:0px; box-shadow:none; width:100%; position:absolute;z-index:9"></img>
+
+
+What are Simple Features?
+========================================================
+
+- Simple feature access is an ISO standard that is widely adopted. It is used in spatial databases (PostGIS), GIS (ArcGIS), open source libraries, GeoJSON, GeoSPARQL, etc.
+  - Fast reading and writing of data
+  - Enhanced plotting performance
+  - sf objects can be treated as data frames in most operations
+  - sf functions can be combined using %>% operator and works well with the tidyverse collection of R packages
+  - sf function names are relatively consistent and intuitive (all begin with st_)
+
+Exposome and Nudge Theory
+========================================================
+
+<img src="images/exposomenudge.png" style="background-color:transparent; border:0px; box-shadow:none; width:100%; position:absolute;z-index:9"></img>
+
+Exposome and Nudge Theory
+========================================================
+
+<img src="images/nudge.png" style="background-color:transparent; border:0px; box-shadow:none; right: 200px; position:absolute;z-index:9"></img>
+
+
+Data Science Pipeline
+========================================================
+
+- Process location data
+- Process environment data
+- Calculate measure of semantic naturalness
+- Share data visualisations
+
+
+Install packages 
+========================================================
+
+```{r install, eval=TRUE, warning=FALSE, include=TRUE, echo=TRUE}
+
+# Install external packages
+library(devtools)
+#install_github("r-spatial/sf")
+#install.packages("RoogleVision", repos = c(getOption("repos"), "http://cloudyr.github.io/drat"))
+
+# Install CRAN packages
+#install.packages(c("tidyverse",
+# "data.table", "pbapply","XML", 
+# "dtplyr", "mapview","sp", "googleway",
+# "adehabitatHR"))
+
+```
+
+Load packages and external functions
+========================================================
+
+```{r install2, eval=TRUE, warning=FALSE, include=TRUE, echo=TRUE}
+
+# load the packages
+invisible(lapply(c("sf","tidyverse","data.table",
+         "pbapply","XML", "dtplyr", 
+         "mapview","sp", "googleway", 
+         "RoogleVision", "adehabitatHR", "zoo", "argosfilter"), require, character.only = TRUE))
+
+# Install User Written Functions
+for (i in c("functions")){
+  source(paste0(i, ".R"), echo=FALSE)
+}
+
+```
+
+
+Google Maps Data
+========================================================
+
+- There is lots of information available in google ecosystem
+
+- Get API key: https://developers.google.com/maps/documentation/javascript/get-api-key
+
+```{r warning=FALSE, eval=F}
+# Get google timeline data
+#https://github.com/alexattia/Maps-Location-History
+
+# Get user route
+Usertrack<-GoogleRoute(mapkey= "", latO=55.934544, lonO=-3.228447,
+            latD=55.947779, lonD=-3.184145, mode="walking")
+```
+
+
+Moves App data
+========================================================
+
+```{r}
+# Now run the functions on the moves_export folder
+# Download the moves data from here: https://accounts.moves-app.com/export
+# unzip it and put it in your working directory
+
+tracks<-get_tracks("data/moves_export/")
+activities<-get_activities("data/moves_export/")
+places<-get_places("data/moves_export/")
+```
+
+Moves App data - tracks
+========================================================
+
+```{r, echo=F}
+# Simple 
+tracks %>%
+  sf::st_as_sf(coords = c("longitude","latitude")) %>%
+  sf::st_set_crs(4326) %>%
+  st_cast("MULTIPOINT") %>%
+  plot(.)
+```
+
+
+Secondary Data - natural environment
+========================================================
+
+```{r}
+# Data already out there
+
+### Download the data
+library(sf)
+greenspaces <- st_read("data/opgrsp_essh_nt/OS Open Greenspace (ESRI Shape File) NT/data/NT_GreenspaceSite.shp", quiet=T)
+greenaccesspoints <- st_read("data/opgrsp_essh_nt/OS Open Greenspace (ESRI Shape File) NT/data/NT_AccessPoint.shp", quiet=T)
+quietwalks <- st_read("data/Quiet_routes/Quiet_routes.kml", quiet=T)
+```
+
+
+Mapview example
+========================================================
+
+```{r}
+# plot it
+mapviewOptions(basemaps = c("CartoDB.Positron", "OpenStreetMap","Esri.WorldImagery"),
+               layers.control.pos = "topright")
+m1<-mapview(quietwalks, zcol = "Name") + mapview(greenspaces, zcol = "function.", alpha = 0) + mapview(greenaccesspoints, zcol="accessType", alpha = 0)
+#mapshot(plot, file = "quietwalks.png")
+```
+
+Mapview example
+========================================================
+
+<body style="margin:0px;padding:0px;overflow:hidden">
+    <iframe src="http://rpubs.com/Marko/SFm1" frameborder="0" scrolling="no" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px; z-index:1" height="100%" width="100%"></iframe>
+</body>
+
+
+Dplyr pipes - Activity Count
+========================================================
+
+```{r, eval=F}
+# Atribute Data- Activity count
+tracks %>%
+  sf::st_as_sf(coords = c("longitude","latitude")) %>%
+  sf::st_set_crs(4326) %>%
+  st_cast("MULTIPOINT") %>%
+  mutate(count=1) %>%
+  group_by(activity) %>%
+  summarise(activitycount=sum(count)) %>%
+  ggplot(., aes(x=activity, y=activitycount)) +geom_bar(stat = "identity")
+```
+
+Dplyr pipes - Activity Count
+========================================================
+
+```{r, eval=T, echo=F}
+# Atribute Data- Activity count
+tracks %>%
+  sf::st_as_sf(coords = c("longitude","latitude")) %>%
+  sf::st_set_crs(4326) %>%
+  st_cast("MULTIPOINT") %>%
+  mutate(count=1) %>%
+  group_by(activity) %>%
+  summarise(activitycount=sum(count)) %>%
+  ggplot(., aes(x=activity, y=activitycount)) +geom_bar(stat = "identity")
+```
+
+
+
+Dplyr pipes - Hour count
+========================================================
+
+```{r, eval=FALSE}
+# Time data - Hour count
+tracks %>%
+  sf::st_as_sf(coords = c("longitude","latitude")) %>%
+  sf::st_set_crs(4326) %>%
+  st_cast("MULTIPOINT") %>%
+  mutate(count=1) %>%
+  mutate(hour=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+  group_by(hour) %>%
+  summarise(hourcount=sum(count)) %>%
+  ggplot(., aes(x=hour, y=hourcount)) +geom_bar(stat = "identity")
+```
+
+Dplyr pipes - Hour count
+========================================================
+
+```{r, echo=FALSE, eval=TRUE}
+# Time data - Hour count
+tracks %>%
+  sf::st_as_sf(coords = c("longitude","latitude")) %>%
+  sf::st_set_crs(4326) %>%
+  st_cast("MULTIPOINT") %>%
+  mutate(count=1) %>%
+  mutate(hour=format(as.POSIXct(strptime(time,"%Y-%m-%dT%H:%M",tz="GMT")) ,format = "%H"))  %>%
+  group_by(hour) %>%
+  summarise(hourcount=sum(count)) %>%
+  ggplot(., aes(x=hour, y=hourcount)) +geom_bar(stat = "identity")
+```
+
+
+
+Dplyr pipes - Minimal Convex Polygon
+========================================================
+
+```{r}
+# Geographic data - calculate Minimal convex polygon for each 
+tracks_sf_pt<-tracks %>%
+  sf::st_as_sf(coords = c("longitude","latitude")) %>%
+  sf::st_set_crs(4326) %>%
+  sf::st_transform(., 27700)
+tracksSPDF<-as(tracks_sf_pt, "Spatial")
+track_poly <- mcp(tracksSPDF[,4], percent=95)
+mcp_sf_pt<-st_as_sf(track_poly, coords = c("longitude", "latitude"),crs = 27700)
+m2<-mapview(mcp_sf_pt, zcol = "area", alpha.regions = 0.3)
+```
+
+
+Dplyr pipes - Minimal Convex Polygon
+========================================================
+
+<body style="margin:0px;padding:0px;overflow:hidden">
+    <iframe src="http://rpubs.com/Marko/SFm2" frameborder="0" scrolling="no" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px; z-index:1" height="100%" width="100%"></iframe>
+</body>
+
+
+
+Dplyr pipes - Bearing
+========================================================
+
+```{r}
+# Calculate bearing
+# convert to spatialMultipointsdataframe
+tracks_sf_pt_bearing<-tracks_sf_pt %>%
+  st_cast("MULTIPOINT") %>%
+  filter(date=="2016-09-01") %>%
+  as(., "Spatial")
+tracks_sf_pt_bearing<-as.data.frame(tracks_sf_pt_bearing)
+bearing<-bearingTrack(tracks_sf_pt_bearing$X1, tracks_sf_pt_bearing$X2)
+bearing<-append(bearing, 90) 
+tracks_sf_pt_bearing<-cbind(tracks_sf_pt_bearing, bearing)
+
+```
+
+Fill Missing
+========================================================
+
+```{r}
+# fill in missing from last unmissing
+tracks_sf_pt_bearing$bearing<-na.locf(tracks_sf_pt_bearing$bearing)
+tracks_sf_pt_bearing$bearing<-ifelse(tracks_sf_pt_bearing$bearing<0, tracks_sf_pt_bearing$bearing+360, tracks_sf_pt_bearing$bearing+0)
+colnames(tracks_sf_pt_bearing)[1:2]<-c("longitude", "latitude")
+
+# Add bearings to 45 degrees to the left and right of the image
+
+```
+
+Streetview Batch Processing
+========================================================
+
+```{r}
+# Create a new directory for the streetview images if one doesn't already exist
+dir.create(file.path(getwd(), "streetview_images"), showWarnings = FALSE)
+
+# Download the images
+imagedownloader<-function(latitude,longitude, bearing){
+  png(paste0("streetview_images/",latitude,"_", longitude,"_", bearing, ".png"), width=640, height=480)
+  google_streetview(location = c(latitude,longitude),
+                    size = c(640,480),
+                    panorama_id = NULL,
+                    output = "plot",
+                    heading = bearing,
+                    fov = 90,
+                    pitch = 0,
+                    response_check = FALSE,
+                    key = "")
+  dev.off()
+}
+
+```
+
+Streetview Batch Processing
+========================================================
+
+```{r, eval=FALSE}
+# Batch download images
+tracks_sf_pt_bearing<-subset(tracks_sf_pt_bearing, select=c("latitude", "longitude", "bearing"))
+library(plyr)
+mdply(tracks_sf_pt_bearing, imagedownloader)
+
+### check the pictures, some of them are inside, some of them have things in the way,
+### for now we'll just need to manaully delete. 
+```
+
+
+Vision Setup 
+========================================================
+
+```{r, eval=FALSE}
+### plugin your credentials for google vision
+### https://github.com/cloudyr/RoogleVision
+### https://flovv.shinyapps.io/gVision-shiny/
+
+options("googleAuthR.client_id" = "")
+options("googleAuthR.client_secret" = "")
+options("googleAuthR.scopes.selected" = c("https://www.googleapis.com/auth/cloud-vision"))
+googleAuthR::gar_auth(new_user=TRUE)
+
+### check it's working
+getGoogleVisionResponse("https://media-cdn.tripadvisor.com/media/photo-s/02/6b/c2/19/filename-48842881-jpg.jpg", feature="LANDMARK_DETECTION")
+
+```
+
+
+Vision Batch Processing
+========================================================
+```{r}
+# Setup image
+image<-as.data.frame(list.files("streetview_images/",
+                                pattern="*.png"))
+colnames(image)<-"image"
+image$image<-as.character(image$image)
+
+# Create a new directory for the output images if one doesn't already exist
+dir.create(file.path(getwd(), "visionoutput"), showWarnings = FALSE)
+```
+
+
+Vision Batch Processing
+========================================================
+```{r, eval=F}
+# Run through vision
+vision<-function(image){
+  image2<-paste0(getwd(), "/streetview_images/", image)
+  visionoutput <- getGoogleVisionResponse(image2, numResults = 18)[,2:3]
+  visionoutput$latitude<-sapply(strsplit(image, "_"), "[", 1)
+  visionoutput$longitude<-sapply(strsplit(image, "_"), "[", 2)
+  visionoutput$bearing<-gsub(".png", "", sapply(strsplit(image, "_"), "[", 3))
+  print(paste0("Processing...", "latitude:", visionoutput$latitude[1],
+               "; longitude:", visionoutput$longitude[1],
+               "; bearing:", visionoutput$bearing[1]))
+  write.table(visionoutput, paste0("visionoutput/labels.csv"), row.names=F, sep=",", append=T, col.names = FALSE)
+}
+plyr::mdply(image, vision)
+
+```
+
+Challenge 1
+========================================================
+
+- How could you use the other outputs of the google vision to find out more about people's exposure to the natural environment?
+
+
+Calculated Semantic Naturalness
+========================================================
+```{r, eval=T}
+# read data in and format
+labeldata<-readr::read_csv("visionoutput/labels.csv", col_names = F)
+colnames(labeldata)<-c("description","score", "latitude", "longitude", "bearing")
+
+# get the hyam labels
+labels<-readr::read_csv("data/visionauxdata/labels.csv")
+
+## add the missing labels
+misslabels<-readr::read_csv("data/visionauxdata/missinglabels1.csv")
+misslabels2<-readr::read_csv("data/visionauxdata/missinglabels2.csv")
+labels<-rbind(labels, misslabels, misslabels2)
+
+```
+
+Calculated Semantic Naturalness
+========================================================
+
+```{r}
+# get id colum
+labeldata$photoid <- labeldata %>% 
+  group_indices(latitude, longitude)
+
+# remove photo labels that didnt work
+labeldata<-labeldata[!(labeldata$score<0),]
+
+# merge with labels
+labeldata<-merge(labeldata, labels, by="description", all.x=T)
+
+# create labels that haven't been defined
+missinglabels<-subset(labeldata, is.na(naturalness))
+if (nrow(missinglabels)>0){print("Add missing labels to label dataframe")}
+
+# if Message then add the label categorise as natural, artificial or ambigious
+#missinglabels<-as.data.frame(unique(missinglabels$description))
+#colnames(missinglabels)<-"description"
+#write.csv(missinglabels, "data/visionauxdata/missinglabels2.csv", row.names=F)
+```
+
+
+Calculated Semantic Naturalness
+========================================================
+```{r}
+# create Calculated semantic naturalness
+labeldata <-
+  labeldata %>%
+  group_by(photoid) %>%
+  mutate(CSN=(sum(naturalness == 1)/n())-(sum(naturalness == -1)/n())) %>%
+  mutate(CSN = round(CSN, 2)) %>%
+  distinct(latitude, longitude, photoid, CSN)
+
+
+# Plot
+mapviewOptions(basemaps = c("Esri.WorldImagery", "OpenStreetMap","CartoDB.Positron"),
+               layers.control.pos = "topright")
+
+m3<-labeldata %>%
+  sf::st_as_sf(coords = c("longitude","latitude")) %>%
+  sf::st_set_crs(4326) %>%
+  sf::st_cast("MULTIPOINT") %>%
+  mapview(., zcol = "CSN", cex = "CSN", color = "black")
+```
+
+
+Calculated Semantic Naturalness
+========================================================
+
+<body style="margin:0px;padding:0px;overflow:hidden">
+    <iframe src="http://rpubs.com/Marko/SFm3" frameborder="0" scrolling="no" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px; z-index:1" height="100%" width="100%"></iframe>
+</body>
+
+
+Challenge 2
+========================================================
+
+- Can you modify the above the create a popup image that is the street view image?
+
+
+Share Data Visualisations
+========================================================
+```{r, eval=F}
+# Let's bring it all together now
+sync(m1, m2, m3)
+
+# let's Publish to Rpubs!
+# http://rpubs.com/Marko/simplefeatures
+```
+
+
+Summary
+========================================================
+<body style="margin:0px;padding:0px;overflow:hidden">
+    <iframe src="http://rpubs.com/Marko/simplefeatures" frameborder="0" scrolling="no" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px; z-index:1" height="100%" width="100%"></iframe>
+</body>
+
+
+Challenge 3
+========================================================
+
+- Can you make a 4th plot that shows the distance to the nearest park and 
+ nearest access point for each activity space point?
+ 
+
+References
+========================================================
+
+https://bookdown.org/robinlovelace/geocompr/
+https://www.azavea.com/blog/2017/08/30/spatial-analysis-pipelines-in-r-with-simple-features/
+https://cengel.github.io/rspatial/
+https://github.com/r-spatial/mapview
+https://github.com/r-spatial/sf
+http://walkerke.github.io/2016/12/spatial-pipelines/
+
