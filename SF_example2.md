@@ -59,7 +59,7 @@ library(devtools)
 #install.packages(c("tidyverse",
 # "data.table", "pbapply","XML", 
 # "dtplyr", "mapview","sp", "googleway",
-# "adehabitatHR"))
+# "adehabitatHR", "zoo", "argosfilter"))
 ```
 
 Load packages and external functions
