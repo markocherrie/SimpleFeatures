@@ -267,15 +267,7 @@ dir.create(file.path(getwd(), "streetview_images"), showWarnings = FALSE)
 # Download the images
 imagedownloader<-function(latitude,longitude, bearing){
   png(paste0("streetview_images/",latitude,"_", longitude,"_", bearing, ".png"), width=640, height=480)
-  google_streetview(location = c(latitude,longitude),
-                    size = c(640,480),
-                    panorama_id = NULL,
-                    output = "plot",
-                    heading = bearing,
-                    fov = 90,
-                    pitch = 0,
-                    response_check = FALSE,
-                    key = "")
+  google_streetview(location = c(latitude,longitude), size = c(640,480), panorama_id = NULL, output = "plot", heading = bearing, fov = 90, pitch = 0, response_check = FALSE, key = "")
   dev.off()
 }
 ```
