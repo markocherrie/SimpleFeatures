@@ -10,7 +10,7 @@ for (i in c("functions")){
 #https://github.com/alexattia/Maps-Location-History
 
 # Get user route
-Usertrack<-GoogleRoute(mapkey= "AIzaSyBzfGHAchxz7FUjfipYrMsTUP7sVBAuh5s", latO=55.934544, lonO=-3.228447,
+Usertrack<-GoogleRoute(mapkey= "", latO=55.934544, lonO=-3.228447,
             latD=55.947779, lonD=-3.184145, mode="walking")
 
 # Now run the functions on the moves_export folder

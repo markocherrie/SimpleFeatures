@@ -4,11 +4,6 @@
 ### https://github.com/cloudyr/RoogleVision
 ### https://flovv.shinyapps.io/gVision-shiny/
 
-options("googleAuthR.client_id" = "161831436415-c27qp3uopkktrrlskjqfssqsnuomihga.apps.googleusercontent.com")
-options("googleAuthR.client_secret" = "21vHb_c6Y0hEzsNqe2pMdlcw")
-options("googleAuthR.scopes.selected" = c("https://www.googleapis.com/auth/cloud-vision"))
-googleAuthR::gar_auth(new_user=TRUE)
-
 ### check it's working
 library(RoogleVision)
 getGoogleVisionResponse("https://media-cdn.tripadvisor.com/media/photo-s/02/6b/c2/19/filename-48842881-jpg.jpg", feature="LANDMARK_DETECTION")
