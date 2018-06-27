@@ -332,18 +332,14 @@ vision<-function(image){
   visionoutput$latitude<-sapply(strsplit(image, "_"), "[", 1)
   visionoutput$longitude<-sapply(strsplit(image, "_"), "[", 2)
   visionoutput$bearing<-gsub(".png", "", sapply(strsplit(image, "_"), "[", 3))
-  print(paste0("Processing...", "latitude:", visionoutput$latitude[1],
-               "; longitude:", visionoutput$longitude[1],
-               "; bearing:", visionoutput$bearing[1]))
-  write.table(visionoutput, paste0("visionoutput/labels.csv"), row.names=F, sep=",", append=T, col.names = FALSE)
-}
+  write.table(visionoutput, paste0("visionoutput/labels.csv"), row.names=F, sep=",", append=T, col.names = FALSE)}
 plyr::mdply(image, vision)
 ```
 
 Challenge 1
 ========================================================
 
-- How could you use the other outputs of the google vision to find out more about people's exposure to the natural environment?
+- How could you use the other outputs of google vision API to find out more about people's exposure to the natural environment?
 
 
 Calculated Semantic Naturalness
@@ -383,9 +379,6 @@ missinglabels<-subset(labeldata, is.na(naturalness))
 if (nrow(missinglabels)>0){print("Add missing labels to label dataframe")}
 
 # if Message then add the label categorise as natural, artificial or ambigious
-#missinglabels<-as.data.frame(unique(missinglabels$description))
-#colnames(missinglabels)<-"description"
-#write.csv(missinglabels, "data/visionauxdata/missinglabels2.csv", row.names=F)
 ```
 
 
@@ -400,12 +393,9 @@ labeldata <-
   mutate(CSN=(sum(naturalness == 1)/n())-(sum(naturalness == -1)/n())) %>%
   mutate(CSN = round(CSN, 2)) %>%
   distinct(latitude, longitude, photoid, CSN)
-
-
 # Plot
 mapviewOptions(basemaps = c("Esri.WorldImagery", "OpenStreetMap","CartoDB.Positron"),
                layers.control.pos = "topright")
-
 m3<-labeldata %>%
   sf::st_as_sf(coords = c("longitude","latitude")) %>%
   sf::st_set_crs(4326) %>%
