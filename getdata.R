@@ -1,7 +1,26 @@
+# May need to update Rtools to 35
+# https://cran.r-project.org/bin/windows/Rtools/
 # devtools::install_github("r-spatial/mapview@develop")
-library(tidyverse)
 
-# get Moves data
+library(devtools)
+#install_github("r-spatial/sf")
+#install.packages("RoogleVision", repos = c(getOption("repos"), "http://cloudyr.github.io/drat"))
+#install_github("r-spatial/mapview@develop")
+
+#install.packages(c("tidyverse",
+# "data.table", "pbapply","XML", 
+# "dtplyr","sp", "googleway",
+# "adehabitatHR", "zoo", "argosfilter"))
+
+invisible(lapply(c(
+  "sf","tidyverse","data.table",
+  "pbapply","XML", "dtplyr", 
+  "mapview","sp", "googleway", 
+  "RoogleVision", "adehabitatHR", 
+  "zoo", "argosfilter"), 
+  require, character.only = TRUE))
+
+# External functions
 for (i in c("functions")){
   source(paste0(i, ".R"), echo=TRUE)
 }
@@ -10,7 +29,7 @@ for (i in c("functions")){
 #https://github.com/alexattia/Maps-Location-History
 
 # Get user route
-Usertrack<-GoogleRoute(mapkey= "", latO=55.934544, lonO=-3.228447,
+Usertrack<-GoogleRoute(mapkey= "AIzaSyBzfGHAchxz7FUjfipYrMsTUP7sVBAuh5s", latO=55.934544, lonO=-3.228447,
             latD=55.947779, lonD=-3.184145, mode="walking")
 
 # Now run the functions on the moves_export folder
@@ -35,11 +54,10 @@ greenspaces <- st_read("data/opgrsp_essh_nt/OS Open Greenspace (ESRI Shape File)
 greenaccesspoints <- st_read("data/opgrsp_essh_nt/OS Open Greenspace (ESRI Shape File) NT/data/NT_AccessPoint.shp")
 quietwalks <- st_read("data/Quiet_routes/Quiet_routes.kml")
 
-
 # plot it
+library(mapview)
 mapviewOptions(basemaps = c("CartoDB.Positron", "OpenStreetMap","Esri.WorldImagery"),
                layers.control.pos = "topright")
-library(mapview)
 m1<-mapview(quietwalks, zcol = "Name") + mapview(greenspaces, zcol = "function.", alpha = 0) + mapview(greenaccesspoints, zcol="accessType", alpha = 0)
 m1
 #mapshot(plot, file = "quietwalks.png")
